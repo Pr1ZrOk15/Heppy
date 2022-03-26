@@ -11,13 +11,15 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
 }
-
+::selection{
+    background-color: #e1fa00;
+    color: #000000;
+}
 .container {
     width: 1200px;
     margin: 0 auto;
 }
 .btn {
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -36,6 +38,7 @@ header{
     padding: 25px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
     position: fixed;
+    background: #fff;
     width: 100%;
     top: 0;
     left: 0;
@@ -55,4 +58,101 @@ header ul li a{
     line-height: 24px;
     color: var(--grey);
     padding-right: 30px;
+}
+/* main style*/
+.main{
+    margin-top: 200px;
+}
+.main .main-info{
+    margin-top: 45px;
+}
+.main .container{
+    display: flex;
+    justify-content: space-around;
+}
+.main h1{
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 59px;
+    margin: 11px 0 18px 0;
+    color: var(--black);
+}
+.main p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+/* phone-gallery stlye */
+.phone-gallery{
+    background-color: var(--black);
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    margin-top: -205px;
+    position: relative;
+}
+.phone-gallery .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.phone-gallery .card{
+    background-color: #fff;
+    border-radius: 20px;
+    padding-top: 40px;
+    flex: 20rem 1 0;
+}
+.phone-gallery h3{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.phone-gallery h2{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 45px;
+}
+.phone-gallery .card-body{
+    background: #F2F2F2;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 20px 20px;
+    margin-top: -170px;
+    position: relative;
+    padding: 48px 0 40px 0;
+}
+.phone-gallery p{
+    color: var(--black);
+    padding: 11px 0 11px 0;
+}
+.phone-gallery .card h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+.phone-gallery .primory{
+    color: #0278ED;
+}
+.phone-gallery .orange{
+    color:#FF5437;
+}
+.phone-gallery .gold{
+    color:#FF9209;
+}
+.phone-gallery .violet{
+    color: #E738CE;
+}
+.phone-gallery .blue{
+    color: #00C6DF;
+}
+.phone-gallery .violet-2{
+    color: #B25DF8;
 }
